@@ -1,0 +1,243 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif
+}
+
+.main-header{
+	background-color:#333333;
+	text-align: center;
+	height: 180px;
+}
+
+.main-nav{
+	margin:0;
+	padding: 0; /*Default margin: 1em , so needs to set 0 to remove margin. */
+}
+
+li{
+	list-style: none;
+	padding-top: .8em;
+	padding-bottom: .8em;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	display: block;
+}
+
+
+/*------_____Main_____------*/
+
+/*------_____With Positioning_____--------*/
+
+
+.main{
+	height:560px;
+	background-image: url(http://s3.amazonaws.com/codecademy-content/projects/broadway/bg.jpg);
+	background-size: cover;
+	text-align: center;
+	position: relative;
+}
+.wrapper{
+	position: absolute;
+	width: 100%;
+	top: 15%;
+}
+.main-title{
+	text-transform: uppercase;
+	font-size: 3.5em;
+	margin-bottom: 1.2em;
+	letter-spacing: 1px;
+}
+
+#button{
+	padding: 10px 24px;
+	background-color: #333333;
+	display: inline;			/*As you are styling list item , which is a block level element */
+	font-weight: 600;
+	letter-spacing:1px; 
+}
+
+/*-----------Column-------------*/
+
+section .container{
+	text-align: center;
+}
+
+.col{
+	width: 75%;
+	margin: 2em auto;
+}
+
+.btn-default{
+	padding: 6px 20px;
+	display: inline;
+	color: #333333;
+	font-size: .6em;
+	border: 1px solid grey;
+}
+
+/*--------------footer---------------*/
+
+footer{
+	height: 85px;
+	background-color: #333333;
+	color: #ffffff;
+}
+
+footer p{
+	padding: 1.5em 5em;
+	font-size: .8em;
+}
+
+
+/*-----------Pseudo Classes-------------*/
+
+
+a:hover{
+	color: #e62739;
+}
+
+.tag-line:first-letter{
+	color: #e62739;
+}
+
+.btn-default:hover{
+	border: 1px solid red;
+}
+
+/*-------------Pseudo-Elements-----------*/
+
+#button::after{
+	background-image: url('next.svg');
+	background-size: cover;       
+	display: inline-block;
+	width: 10px; 
+	height: 10px;                
+	content:"";	
+	margin-left: 5px;
+}
+
+
+/*----------Media Quaries-----------*/
+
+
+@media(min-width: 769px){
+	
+	/*-----Main-Header-----*/
+
+	.main-nav,
+	.main-nav li{
+		display: inline-block;	
+	}
+
+	.main-nav{
+		margin: 1em 3em;
+	}
+
+	.main-nav li{
+		margin: .5em;
+		padding: .3em;
+	}
+
+	.main-header{
+		height: 4.5em;
+	}
+
+	.main-header .container{
+		text-align: left;
+	}
+
+	/*-----Section------*/
+	
+	section .container{
+		height: 340px;
+	}
+
+	.col{
+		display: inline-block;
+		width: 180px;           /*I tried percentages and em value too here, but that doesn't fit*/
+		margin: 4em .5em;
+		vertical-align: top;
+	}
+
+	.col p{
+		margin-bottom: 1.8em;
+	}
+
+
+	@media(min-width: 1050px){
+
+		/*------Main-header------*/
+
+		.main-nav{
+			margin-left: 8em;
+		}
+
+		/*-----Main-----*/          
+
+		.main{
+			height: 820px;
+		}
+
+		#button{
+			padding: 16px 40px;
+			background-color: #333333;
+			display: inline;
+		}
+
+		.main-title{
+			font-size: 4.5em;
+		}
+
+		/*------Section------*/
+
+		section .container{
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		.col{
+			width: 230px;
+			margin-left: 3.5em;
+		}
+
+		/*-----footer-----*/
+
+		footer p{
+			padding: 2em 10em;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

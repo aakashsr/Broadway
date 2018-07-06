@@ -1,0 +1,58 @@
+.jumbotron{
+	background: url('http://s3.amazonaws.com/codecademy-content/projects/broadway/bg.jpg');
+	background-size: cover;
+	height: 640px;
+}
+
+.jumbotron h1{
+	font-size: 3rem;
+	font-weight: 400;
+}
+
+.jumbotron a{
+	font-weight: 200;
+}
+
+.jumbotron .btn{
+	padding: 8px 30px;
+}
+
+.btn{
+	border-radius: 0;
+}
+
+.footer{
+	height: 85px;
+	background-color: #333333;
+}
+
+.footer p{
+	font-weight: 100;
+	font-size: 12px;
+}
+
+.nav{
+	background-color: #333333;
+}
+
+
+@media(min-width: 545px){
+
+	.nav{
+		height: 60px;
+	}
+
+	.jumbotron h1{
+		font-size: 4rem;
+		font-weight: 400;
+	}
+}
+
+@media(min-width: 768px){
+
+	.jumbotron h1{
+		font-size:  5rem;
+	}
+}
+
+
